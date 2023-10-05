@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
-}
+*{padding:0;margin:0;box-sizing: border-box;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Points{
+  background-color: #fff !important;
 }
+.mdbtn{
+    background-color: #007BFF !important;
+}
+h2{
+  font-weight: bold;
+  text-align: justify;
+}
+.bbtn{
+   background-color: #845E12; color: white
+}
+.container1{
+    width: 100%;
+    text-align: center;
+    color: #343434,
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .container1 h1{
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background: url(bg.jpg) center no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .container1 a{
+    text-decoration: none;
+    background: #e55039aa;
+    color: #F9F9FA;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.4s;
   }
+  /* @media screen and (max-width: 480px) {
+    .textTitle{
+      margin-bottom: 50px;
+    }
+   
+  } */
+  @media screen and (min-width: 480px) {
+    
+    .textinc{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .container1{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: -1px;
+        margin-left: 8px;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #343434
+      }
+      
+      .container1 h1{
+        font-size: 160px;
+        margin: 0;
+        font-weight: 900;
+        letter-spacing: 20px;
+        background: url(bg.jpg) center no-repeat;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+      
+      .container1 a{
+        text-decoration: none;
+        background: #e55039aa;
+        color: #F9F9FA;
+        padding: 12px 24px;
+        display: inline-block;
+        border-radius: 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: 0.4s;
+      }
+    
+  }
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup chat - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .btnstyle{
+    right: 0;
+    top: 90%;
+    position: fixed
+  }
+  .chat-popup{
+    right: 2%;
+    top: 20%;
+    position: fixed
+  }
+  @media (max-width: 576px) { 
+    .chat-popup{
+      right: 5%;
+      top: 30%;
+      position: fixed
+    }
+  }
+
+.mx-auto{
+  margin-left: 13px!important;
 }
